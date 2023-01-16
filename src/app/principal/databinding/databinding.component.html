@@ -1,0 +1,21 @@
+<section class="container">
+    <section class="border rowunded shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <h1 class="text-center text-primary">{{titulo}}</h1>
+        <section class="mb-3">
+            <p class="text-center text-primary">Event Blinding</p>
+            <input class="btn btn-success mb-3" type="button" (click)="enviar()" value="Hide">
+            <section *ngIf="booleano">
+                <p>Event Binding, es el mecanismo de data binding mediante el cual trabaja con los eventos que se encuentra en el DOM</p>
+            </section>
+        </section>
+
+        <section class="mb-3">
+            <p>Two way Blinding</p>
+            <p>{{thwoway}}</p>
+        </section>
+        
+        <section class="mb-3">
+            <textarea name="" id="" cols="60" rows="10" [(ngModel)]="thwoway"></textarea>
+        </section>
+    </section>
+</section>    
